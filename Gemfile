@@ -44,6 +44,10 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+# Active Model
+gem 'active_model_serializers'
+
+# Authentiation
 gem 'devise'
 
 # Angular stuff
