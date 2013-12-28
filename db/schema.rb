@@ -11,7 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131228035801) do
+ActiveRecord::Schema.define(version: 20131228162520) do
+
+  create_table "recipes", force: true do |t|
+    t.string   "name"
+    t.integer  "owner_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "recipes", ["owner_id"], name: "index_recipes_on_owner_id"
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false

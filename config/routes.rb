@@ -6,9 +6,7 @@ Grubkeep::Application.routes.draw do
     devise_scope :user do
       resource :session, only: [:create, :destroy]
     end
-    resources :recipe_list, only: [:index] do
-      resources :recipe, only: [:index, :create, :update, :destroy]
-    end
+    resources :recipe, only: [:index, :show, :create, :update, :destroy]
   end
 
   root :to => "home#index"
