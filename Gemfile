@@ -54,4 +54,6 @@ gem 'devise'
 gem 'angularjs-rails'
 
 # Testing
-gem 'rspec'
+group :test do
+  gem 'rspec-rails'
+end
