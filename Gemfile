@@ -56,4 +56,5 @@ gem 'angularjs-rails'
 # Testing
 group :test do
   gem 'rspec-rails'
+  gem 'factory_girl'
 end
