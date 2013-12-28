@@ -18,5 +18,11 @@ class Api::RecipeController < Api::BaseController
   def recipe
     @recipe ||= Recipe.find(params[:id])    
   end
+  
+  def default_serializer_options
+    {
+      root: false
+    }
+  end
 
 end
