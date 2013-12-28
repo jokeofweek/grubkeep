@@ -52,3 +52,6 @@ gem 'devise'
 
 # Angular stuff
 gem 'angularjs-rails'
+
+# Testing
+gem 'rspec'
