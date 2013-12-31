@@ -47,11 +47,14 @@ end
 # Active Model
 gem 'active_model_serializers'
 
-# Authentiation
+# Authentication
 gem 'devise'
 
 # Angular stuff
 gem 'angularjs-rails'
+
+# Tagging
+gem 'acts-as-taggable-on'
 
 # Testing
 group :test do
